@@ -17,7 +17,6 @@ export default class RedditRepository extends BaseRepository {
 			for (var i=0; i<redditList.length; i++) {
 				this.redditCache.put(redditList[i].data.id, redditList[i].data);
 			}
-			console.log(this.redditCache);
 			return(redditList);
 		});
 	}

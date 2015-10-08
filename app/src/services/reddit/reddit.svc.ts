@@ -9,7 +9,6 @@ export default class RedditService extends BaseService {
             url: this.host,
         }).then((success) => {
 			var res: any = success;
-			// console.log(res);
             return <Array<any>>res.response.data.children;
         });
     }

@@ -11,11 +11,6 @@ export default class RedditdetailViewControl extends BaseViewControl {
     templateString: string = require('./redditdetail.vc.html');
 
     context: any = {
-		// redditItem: <any> {
-		// 	title: <string> '',
-		// 	author: <string> '',
-		// 	id
-		// }
 		redditUrl: <string> '',
 		redditTitle: <string> '',
 		redditAuthor: <string> '',

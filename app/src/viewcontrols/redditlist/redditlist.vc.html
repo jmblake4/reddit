@@ -1,8 +1,7 @@
 <div class="container">
 	<div id="redditListContainer" plat-control="plat-foreach" plat-context="redditList">
-		<div class="row redditEntry">
+		<div class="row redditPost">
 			<h3 class="redditText"><a href="#!/redditdetail/{{data.id}}"> {{ data.title }}</a></h3>
-			<p class="redditText"><img src="{{ data.url }}" /></p>
 			<p class="redditText">{{ data.author }}</p>
 		</div>
 	</div>
