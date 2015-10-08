@@ -1,13 +1,13 @@
 <div class="container">
 	<div id="redditDetailContainer">
-		<div class="row redditEntry">
-			<h3 class="redditText">{{ redditTitle }}</a></h3>
-			<p class="redditText">{{ redditAuthor }}</p>
-			<p class="redditText"><a href="{{redditUrl}}"> {{ redditUrl }}</a></h3>
-			<p class="redditText">{{ redditId }}</p>
+		<div class="row redditPost">
+			<h3 class="redditText">Title: {{ redditTitle }}</a></h3>
+			<p class="redditText">Author: {{ redditAuthor }}</p>
+			<p class="redditText">URL: <a href="{{redditUrl}}"> {{ redditUrl }}</a></h3>
+			<p class="redditText">ID: {{ redditId }}</p>
 		</div>
-		<div class="row reddithtml">
-			<span><iframe src="{{redditUrl}}" width="600px" height="600px"></iframe></span>
+		<div class="row redditHtml">
+			<span id="iframeSpan"><iframe src="{{redditUrl}}" width="600px" height="600px"></iframe></span>
 		</div>
 	</div>
 </div>
