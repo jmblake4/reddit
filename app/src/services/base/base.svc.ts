@@ -11,6 +11,6 @@ export default class BaseService {
 	protected Promise: async.IPromise;
 	protected utils: Utils;
 
-    host: string = 'http://www.reddit.com/r/aww.json';
+    host: string = 'http://www.reddit.com/r/WTF/.json';
 	
 }
