@@ -1,11 +1,10 @@
 import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
 import RedditRepository from '../../repositories/reddit/reddit.repo';
-import RedditService from '../../services/reddit/reddit.svc';
 
 export default class RedditlistViewControl extends BaseViewControl {
 
-	constructor(private redditService: RedditService) {
+	constructor(private redditRepository: RedditRepository) {
 		super();
 	}
 	
@@ -16,11 +15,11 @@ export default class RedditlistViewControl extends BaseViewControl {
 	};
 
 	navigatedTo(): void {
-		this.redditService.getRedditList().then((redditList) => {
+		this.redditRepository.getRedditList().then((redditList) => {
 			this.context.redditList = redditList;
 		});
 	};
 
 }
 
-register.viewControl('redditlist-vc', RedditlistViewControl, [RedditService]);
+register.viewControl('redditlist-vc', RedditlistViewControl, [RedditRepository]);
